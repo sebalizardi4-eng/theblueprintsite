@@ -1,4 +1,8 @@
 ---
+import { Image } from 'astro:assets';
+import barWide from '../assets/likesilkto-bar-4368709_1920.jpg';
+import barRustic from '../assets/newhouse-bar-826688_1920.jpg';
+import barUpscale from '../assets/tuanarch87-restaurant-6479814_1920.jpg';
 ---
 
 <section id="gallery" class="gallery-section" aria-label="Bar portfolio gallery">
@@ -10,8 +14,8 @@
   </div>
   <div class="gallery-grid">
     <figure class="gallery-item gallery-item--wide">
-      <img
-        src="/likesilkto-bar-4368709_1920.jpg"
+      <Image
+        src={barWide}
         alt="Atmospheric bar interior with illuminated back-bar shelving"
         loading="lazy"
       />
@@ -21,8 +25,8 @@
       </figcaption>
     </figure>
     <figure class="gallery-item">
-      <img
-        src="/newhouse-bar-826688_1920.jpg"
+      <Image
+        src={barRustic}
         alt="Warm rustic restaurant and bar interior with brick walls"
         loading="lazy"
       />
@@ -32,8 +36,8 @@
       </figcaption>
     </figure>
     <figure class="gallery-item">
-      <img
-        src="/tuanarch87-restaurant-6479814_1920.jpg"
+      <Image
+        src={barUpscale}
         alt="Upscale modern restaurant bar with sleek stools and bottle display"
         loading="lazy"
       />

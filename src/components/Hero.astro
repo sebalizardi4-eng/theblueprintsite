@@ -1,4 +1,8 @@
 ---
+import { Image } from 'astro:assets';
+import heroBg from '../assets/stocksnap-restaurant-2618315_1920.jpg';
+import heroDrink from '../assets/fabianoadvertising-drink-3502704_1920.jpg';
+
 interface Props {
   whatsappUrl: string;
 }
@@ -7,8 +11,8 @@ const { whatsappUrl } = Astro.props;
 
 <section id="hero" class="hero">
   <div class="hero-bg" aria-hidden="true">
-    <img
-      src="/stocksnap-restaurant-2618315_1920.jpg"
+    <Image
+      src={heroBg}
       alt=""
       class="hero-bg-img"
       loading="eager"
@@ -57,8 +61,8 @@ const { whatsappUrl } = Astro.props;
 
     <div class="hero-photo-panel">
       <div class="photo-frame">
-        <img
-          src="/fabianoadvertising-drink-3502704_1920.jpg"
+        <Image
+          src={heroDrink}
           alt="Craft cocktails prepared by a professional bartender"
           loading="eager"
           class="hero-photo"

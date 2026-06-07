@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 interface Props {
   whatsappUrl: string;
 }
@@ -8,7 +10,7 @@ const { whatsappUrl } = Astro.props;
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#hero" class="nav-logo" aria-label="The Bar Blueprint Home">
-      <img src="/logo.png" alt="The Bar Blueprint" height="44" />
+      <Image src="/logo.png" alt="The Bar Blueprint" width={132} height={44} />
     </a>
     <button
       class="nav-toggle"

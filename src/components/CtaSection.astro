@@ -1,4 +1,7 @@
 ---
+import { Image } from 'astro:assets';
+import ctaBg from '../assets/newhouse-bar-826688_1920.jpg';
+
 interface Props {
   whatsappUrl: string;
 }
@@ -7,7 +10,7 @@ const { whatsappUrl } = Astro.props;
 
 <section id="contact" class="cta-section">
   <div class="cta-bg" aria-hidden="true">
-    <img src="/newhouse-bar-826688_1920.jpg" alt="" loading="lazy" class="cta-bg-img" />
+    <Image src={ctaBg} alt="" loading="lazy" class="cta-bg-img" />
     <div class="cta-bg-overlay"></div>
   </div>
   <div class="cta-grid blueprint-grid" aria-hidden="true"></div>

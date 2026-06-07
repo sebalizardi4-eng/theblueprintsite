@@ -1,0 +1,146 @@
+---
+interface Props {
+  whatsappUrl: string;
+}
+const { whatsappUrl } = Astro.props;
+---
+
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow" data-i18n="svc.eyebrow">What I Offer</p>
+      <h2 class="section-title" data-i18n-html="svc.title">
+        The Blueprint for<br /><span class="gold-text">Bar Excellence</span>
+      </h2>
+      <p class="section-desc" data-i18n="svc.desc">
+        Every struggling bar has the same core problems. I've solved them before — and I'll solve them for you.
+      </p>
+    </div>
+    <div class="services-grid">
+
+      <!-- 01 Cocktail & Menu Development -->
+      <article class="svc-card">
+        <div class="svc-num">01</div>
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"></path>
+            <rect x="9" y="3" width="6" height="4" rx="1"></rect>
+            <line x1="9" y1="12" x2="15" y2="12"></line>
+            <line x1="9" y1="16" x2="12" y2="16"></line>
+          </svg>
+        </div>
+        <h3 class="svc-title" data-i18n="svc1.title">Cocktail &amp; Menu Development</h3>
+        <p class="svc-desc" data-i18n="svc1.desc">
+          Redesign your menu around profitability. Identify high-margin items, eliminate underperformers, and craft cocktail lists that guests love and owners profit from.
+        </p>
+        <ul class="svc-list">
+          <li data-i18n="svc1.b1">Menu cost analysis &amp; pricing strategy</li>
+          <li data-i18n="svc1.b2">Signature cocktail development</li>
+          <li data-i18n="svc1.b3">Seasonal &amp; trend-driven offerings</li>
+        </ul>
+      </article>
+
+      <!-- 02 Revenue Optimization -->
+      <article class="svc-card svc-card--featured">
+        <div class="svc-num">02</div>
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+          </svg>
+        </div>
+        <h3 class="svc-title" data-i18n="svc2.title">Revenue Optimization</h3>
+        <p class="svc-desc" data-i18n="svc2.desc">
+          Turn your bar into a revenue engine. Through strategic upselling, faster service cycles, and waste reduction, I deliver measurable improvements to your bar's performance and profitability.
+        </p>
+        <ul class="svc-list">
+          <li data-i18n="svc2.b1">Upselling &amp; suggestive selling systems</li>
+          <li data-i18n="svc2.b2">Waste control &amp; pour cost reduction</li>
+          <li data-i18n="svc2.b3">Shift &amp; speed-of-service optimization</li>
+        </ul>
+      </article>
+
+      <!-- 03 Staff Training -->
+      <article class="svc-card">
+        <div class="svc-num">03</div>
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 00-3-3.87"></path>
+            <path d="M16 3.13a4 4 0 010 7.75"></path>
+          </svg>
+        </div>
+        <h3 class="svc-title" data-i18n="svc3.title">Staff Training</h3>
+        <p class="svc-desc" data-i18n="svc3.desc">
+          A bar is only as good as its team. I train bartenders and servers to work faster, communicate better, and deliver experiences that build loyal regulars.
+        </p>
+        <ul class="svc-list">
+          <li data-i18n="svc3.b1">Bartending technique &amp; craft cocktails</li>
+          <li data-i18n="svc3.b2">Guest experience &amp; hospitality standards</li>
+          <li data-i18n="svc3.b3">Team coordination &amp; shift management</li>
+        </ul>
+      </article>
+
+      <!-- 04 Bar Operations -->
+      <article class="svc-card">
+        <div class="svc-num">04</div>
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </div>
+        <h3 class="svc-title" data-i18n="svc4.title">Bar Operations</h3>
+        <p class="svc-desc" data-i18n="svc4.desc">
+          I assess how your bar operates behind the scenes and rebuild the systems that keep it running consistently, efficiently, and profitably — during every shift, not just the busy ones.
+        </p>
+        <ul class="svc-list">
+          <li data-i18n="svc4.b1">Station setup &amp; workflow design</li>
+          <li data-i18n="svc4.b2">Inventory management systems</li>
+          <li data-i18n="svc4.b3">SOP creation &amp; documentation</li>
+        </ul>
+      </article>
+
+      <!-- 05 Bar Pricing & Financial Strategy -->
+      <article class="svc-card">
+        <div class="svc-num">05</div>
+        <div class="svc-icon" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="1" x2="12" y2="23"></line>
+            <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path>
+          </svg>
+        </div>
+        <h3 class="svc-title" data-i18n="svc5.title">Bar Pricing &amp; Financial Strategy</h3>
+        <p class="svc-desc" data-i18n="svc5.desc">
+          Most bars are leaving money on the table without knowing it. I analyze your current pricing structure, identify gaps, and rebuild it so every drink reflects the quality you deliver and the profit you deserve.
+        </p>
+        <ul class="svc-list">
+          <li data-i18n="svc5.b1">Pricing audit &amp; restructure</li>
+          <li data-i18n="svc5.b2">Pour cost analysis</li>
+          <li data-i18n="svc5.b3">Revenue tracking recommendations</li>
+        </ul>
+      </article>
+
+      <!-- CTA Card -->
+      <article class="svc-card svc-card--cta">
+        <p class="svc-cta-tag" data-i18n="svcCta.tag">Not sure where to start?</p>
+        <h3 class="svc-cta-heading" data-i18n-html="svcCta.heading">
+          Get a Free<br /><span class="gold-text">Bar Audit</span>
+        </h3>
+        <p class="svc-cta-body" data-i18n="svcCta.body">
+          15 minutes on WhatsApp. I'll identify your top revenue leaks — no strings attached.
+        </p>
+        <a href={whatsappUrl} id="svcCtaLink" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          <span data-i18n="svcCta.btn">Start Free Audit</span>
+        </a>
+        <p class="svc-cta-email" data-i18n="svcCta.email">…or contact me at <a href="mailto:sebastian@thebarblueprint.net">sebastian@thebarblueprint.net</a></p>
+      </article>
+
+    </div>
+  </div>
+</section>
